@@ -1,0 +1,11 @@
+/* @import url("/css/font.css"); */
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=block");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Oswald", cursive;
+}
