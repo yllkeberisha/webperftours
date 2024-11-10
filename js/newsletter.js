@@ -1,3 +1,13 @@
+function runBgTask() {
+    const fn = window["_"].throttle(function () {
+        let end = Date.now() + 40 + Math.random() * 90;
+        while (Date.now() < end) { }
+    }, 20);
+}
+window.bgTask = function () {
+    setTimeout(runBgTask, 1);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     if (location.href.includes("showNewsletterSignup")) {
         const div = document.createElement("div");
